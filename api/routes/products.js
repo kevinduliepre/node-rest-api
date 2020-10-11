@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const mongoose = require('mongoose');
 const multer = require('multer');
-const path = require('path');
 
 const storage = multer.diskStorage({
   destination: function(req, file, cb){
@@ -29,7 +28,6 @@ const upload = multer({
   },
   fileFilter: fileFilter
 });
-// const upload = multer({dest: 'uploads/'});
 
 const Product = require('../models/product');
 
