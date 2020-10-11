@@ -17,6 +17,7 @@ mongoose.connect('mongodb+srv://' + process.env.MONGO_ATLAS_UR + ':' + process.e
 // Midlewares
 
 app.use(morgan("dev"));
+app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
