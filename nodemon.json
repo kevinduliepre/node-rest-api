@@ -2,6 +2,7 @@
     "env": {
         "MONGO_ATLAS_UR": "admin",
         "MONGO_ATLAS_PW": "admin",
-        "MONGO_ATLAS_DB": "node-rest-shop"
+        "MONGO_ATLAS_DB": "node-rest-shop",
+        "JWT_KEY": "secret"
     }
 }
